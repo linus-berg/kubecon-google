@@ -1,0 +1,9 @@
+bin/
+obj/
+volumes/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+*.log
+database/
+.DS_Store

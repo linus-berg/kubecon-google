@@ -21,7 +21,7 @@ COPY Run.Samples.Pubsub.MinimalApi/Run.Samples.Pubsub.MinimalApi.csproj ./
 RUN dotnet restore
 
 COPY . ./
-RUN dotnet publish -r linux-x64 --no-self-contained -p:PublishReadyToRun=true -c Release -o out
+RUN dotnet publish "Run.Samples.Pubsub.MinimalApi.csproj" -r linux-x64 --no-self-contained -p:PublishReadyToRun=true -c Release -o out
 
 # Copy to runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:6.0

@@ -14,7 +14,7 @@ jobs:
       matrix: 
         services:
           - name: kubecon-google
-            directory: Run.Samples.PubSub.MinimalApi
+            directory: Run.Samples.Pubsub.MinimalApi
     name: Build Docker image and push to repositories
     # run only when code is compiling and tests are passing
     runs-on: ubuntu-latest

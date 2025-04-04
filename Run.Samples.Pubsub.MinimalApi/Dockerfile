@@ -17,7 +17,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
-COPY Run.Samples.Pubsub.MinimalApi.csproj ./
+COPY Run.Samples.Pubsub.MinimalApi/Run.Samples.Pubsub.MinimalApi.csproj ./
 RUN dotnet restore
 
 COPY . ./
